@@ -3,3 +3,57 @@
 @tailwind components;
 
 @tailwind utilities;
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.left-50 {
+  left: 50%;
+}
+.right-50 {
+  right: 50%;
+}
+.top-50 {
+  top: 50%;
+}
+
+.-z-1 {
+  z-index: -1;
+}
+.nav-dot:hover span {
+  opacity: 1;
+}
+
+.secondary-title {
+  @apply text-3xl font-bold;
+}
+.secondary-title::before {
+  content: "";
+  @apply block w-12 h-2 bg-accent rounded-full mb-1;
+}
+
+.section-paragraph {
+  @apply text-secondary my-6 w-full max-w-3xl;
+}
+.badge {
+  @apply px-4 py-2 text-sm rounded bg-accent;
+}
+[id] {
+  scroll-margin-top: 100%;
+}
+.left-precentage {
+  left: 5%;
+}
+.nav-square {
+  transition: background 200ms;
+}
+.nav-square:hover span {
+  opacity: 1;
+}
+
+.active {
+  @apply bg-accent;
+}
+
