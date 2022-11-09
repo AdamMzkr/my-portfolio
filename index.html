@@ -9,59 +9,52 @@
     <link rel="stylesheet" href="tailwind.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet" />
   </head>
   <body class="bg-body text-text font-poppins pb-12">
     <header class="py-6">
-      <div
-        class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px24 w-full"
-      >
+      <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px24 w-full">
         <div class="text-lg font-bold">Adam Mazurek</div>
         <div class="nav hidden md:flex space-x-12 items-center">
           <a href="#home" class="text-secondary">Home</a>
           <a href="#about">About</a>
           <a href="#work">My Work</a>
-          <a href="#conatact"
-            ><button
-              class="px-6 py-2 border border-accent font-bold text-accent"
-            >
-              Hire Me
-            </button></a
-          >
+          <a href="#conatact"><button class="px-6 py-2 border border-accent font-bold text-accent">Hire Me</button></a>
         </div>
         <div class="md:hidden">
-          <svg
-            width="40"
-            height="40"
-            viewBox="0 0 40 40"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M35 30H20V26.6667H35V30ZM35 21.6667H5V18.3333H35V21.6667ZM35 13.3333H5V10H35V13.3333Z"
-              fill="#00FFFF"
-            />
+          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M35 30H20V26.6667H35V30ZM35 21.6667H5V18.3333H35V21.6667ZM35 13.3333H5V10H35V13.3333Z" fill="#00FFFF" />
           </svg>
         </div>
       </div>
     </header>
 
-    <div
-      class="container mt-16 flex justify-between itemst-center mx-auto px-8 md:px-14 lg:px24 w-full"
-    >
-      <div class="flex flex-wrap md:flex-nowrap"></div>
-    </div>
-    <nav class="inline-block lg:mr-24 lg:w-4 fixed left-precentage hidden xl">
-      <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-26">
-        <a
-          href="#"
-          class="nav-square selected-square block w-7 h-7 border-4 bg-selected"
-          ><span class="bg-black px-2 py-1 ml-10 opacity:0">Home</span></a
-        >
+    <div class="container mt-16 flex justify-between itemst-center mx-auto px-8 md:px-14 lg:px24 w-full">
+      <div class="flex flex-wrap md:flex-nowrap">
+        <nav class="inline-block lg:mr-24 lg:w-4 fixed left-precentage hidden xl:block">
+          <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-44">
+            <a href="#" class="nav-square block w-5 h-5 bg-nav active">
+              <span class="bg-black px-2 py-1 ml-10 opacity-0">Home</span>
+            </a>
+            <a href="#" class="nav-square block w-5 h-5 bg-nav">
+              <span class="bg-black px-2 py-1 ml-10 opacity-0">About</span>
+            </a>
+            <a href="#" class="nav-square block w-5 h-5 bg-nav">
+              <span class="bg-black px-2 py-1 ml-10 opacity-0">Work</span>
+            </a>
+            <a href="#" class="nav-square block w-5 h-5 bg-nav">
+              <span class="bg-black px-2 py-1 ml-10 opacity-0">Contact</span>
+            </a>
+          </div>
+        </nav>
+
+        <div class="flex flex-wrap lg:ml-20 justify-center md:justfy-start max-w-xl mt-0 md:my-36">
+          <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left">
+            Building<br />
+            bautiful web experience
+          </h1>
+        </div>
       </div>
-    </nav>
+    </div>
   </body>
 </html>
