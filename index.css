@@ -56,4 +56,6 @@ body {
 .active {
   @apply bg-accent;
 }
-
+.hero-img {
+  max-height: 35rem;
+}
