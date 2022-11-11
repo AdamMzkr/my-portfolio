@@ -9,7 +9,9 @@ module.exports = {
         'accent': '#00FFF5',
         'secondary': '#00ADB5',
         'dark': '#1C2533',
-        'nav':'#393E46'
+        'nav':'#393E46',
+        'secondary-10':'#00ADB526',
+        'selected-nav':'#4B6465'
       },
       fontFamily: {
         'poppins': ["'Popins'", "sans-serif"]
