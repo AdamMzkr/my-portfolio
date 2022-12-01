@@ -44,7 +44,7 @@ body {
   scroll-margin-top: 100%;
 }
 .left-precentage {
-  left: 5%;
+  left: 3%;
 }
 .nav-square {
   transition: background 200ms;
@@ -57,5 +57,5 @@ body {
   @apply bg-accent;
 }
 .hero-img {
-  max-height: 25rem;
+  max-height: 35rem;
 }

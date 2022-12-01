@@ -16,7 +16,7 @@
   </head>
   <body class="bg-body text-text font-poppins pb-12">
     <header class="py-4">
-      <div class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px24 w-full">
+      <div class="container flex justify-between items-center mx-auto px-8 md:px-6 lg:px20 w-full">
         <div class="text-xl font-bold text-accent lg:ml-20">Adam Mazurek</div>
         <div class="nav hidden md:flex space-x-12 items-center">
           <a href="#home" class="hover:text-accent text-secondary">Home</a>
@@ -48,28 +48,31 @@
     </header>
 
     <div
-      class="container mt-4 flex justify-between itemst-center mx-auto px-8 md:px-14 lg:px24 w-full"
+      class="container mt-4 flex justify-between itemst-center mx-auto px-4 md:px-14 lg:px24 w-full"
     >
       <div class="flex flex-wrap md:flex-nowrap">
         <nav class="inline-block lg:mr-24 lg:w-4 fixed left-precentage hidden xl:block">
           <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-44">
             <a href="#" class="nav-square block w-5 h-5 bg-nav active hover:bg-selected-nav">
-              <span class="bg-black px-2 py-1 ml-10 opacity-0">Home</span>
+              <span class="bg-black px-2 py-1 ml-8 opacity-0">Home</span>
             </a>
             <a href="#" class="nav-square block w-5 h-5 bg-nav hover:bg-selected-nav">
-              <span class="bg-black px-2 py-1 ml-10 opacity-0">About</span>
+              <span class="bg-black px-2 py-1 ml-8 opacity-0">About</span>
             </a>
             <a href="#" class="nav-square block w-5 h-5 bg-nav hover:bg-selected-nav">
-              <span class="bg-black px-2 py-1 ml-10 opacity-0">Work</span>
+              <span class="bg-black px-2 py-1 ml-8 opacity-0">Work</span>
             </a>
             <a href="#" class="nav-square block w-5 h-5 bg-nav hover:bg-selected-nav">
-              <span class="bg-black px-2 py-1 ml-10 opacity-0">Contact</span>
+              <span class="bg-black px-2 py-1 ml-8 opacity-0">Contact</span>
             </a>
           </div>
         </nav>
 
-        <div class="flex flex-wrap lg:ml-20 justify-center md:justfy-start max-w-xl mt-0 md:my-16">
-          <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left mt-12">
+        <section
+          id="hero"
+          class="flex flex-wrap lg:ml-20 justify-center md:justfy-start max-w-xl mt-0 md:my-16"
+        >
+          <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left mt-16">
             Building<br />
             beautiful web experience
           </h1>
@@ -127,8 +130,15 @@
             alt="brain code"
             class="hero-img w-1/2 md:absolute md:mt-0 right-0 -z-1"
           />
-        </div>
+        </section>
       </div>
+    </div>
+    <div
+      class="container mt-64 flex justify-between items-centar mx -auto px-8 md:px14 lg:px-24 w-full"
+    >
+      <section id="work">
+        <h2 class="secondary-title">My Work</h2>
+      </section>
     </div>
   </body>
 </html>
