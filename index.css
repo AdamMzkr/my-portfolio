@@ -8,6 +8,9 @@ html,
 body {
   scroll-behavior: smooth;
 }
+* {
+  border: 0.1px solid #626060;
+}
 
 .left-50 {
   left: 50%;
@@ -52,10 +55,12 @@ body {
 .nav-square:hover span {
   opacity: 1;
 }
-
+.icon {
+  margin-right: 0.75rem;
+}
 .active {
   @apply bg-accent;
 }
 .hero-img {
-  max-height: 35rem;
+  max-height: 32rem;
 }

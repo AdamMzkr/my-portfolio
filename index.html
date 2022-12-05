@@ -10,143 +10,117 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" />
   </head>
   <body class="bg-body text-text font-poppins">
     <div class="container border-2 mx-auto pt-4 px-12 md:px-6 lg:px-24 w-full">
-      
-        <nav>
-          <div class="container flex justify-between items-center mx-auto px-12 md:px-6 lg:px-24 w-full">
-              <div class="text-xl font-bold text-accent">Adam Mazurek</div>
-              <div class="nav hidden md:flex space-x-12 items-center">
-                <a href="#home" class="hover:text-accent text-secondary">Home</a>
-                <a href="#about" class="hover:text-accent">About</a>
-                <a href="#work" class="hover:text-accent">My Work</a>
-                <a href="#conatact">
-                <button class="px-6 py-2 border border-accent font-bold text-accent hover:bg-secondary-10 transition ease-in-out delay-50">Hire Me</button>
-                </a>
-            </div>
-          </div><!-- ./container-->
-        </nav>
-
-        <div class="flex flex-wrap md:flex-nowrap">
-          <nav class="inline-block lg:mr-24 lg:w-4 fixed left-precentage hidden xl:block">
-            <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-44">
-              <a href="#" class="nav-square block w-3 h-3 bg-nav active hover:bg-selected-nav">
-                <span class="bg-black px-2 py-1 ml-8 opacity-0">Home</span>
-              </a>
-              <a href="#" class="nav-square block w-3 h-3 bg-nav hover:bg-selected-nav">
-                <span class="bg-black px-2 py-1 ml-8 opacity-0">About</span>
-              </a>
-              <a href="#" class="nav-square block w-3 h-3 bg-nav hover:bg-selected-nav">
-                <span class="bg-black px-2 py-1 ml-8 opacity-0">Work</span>
-              </a>
-              <a href="#" class="nav-square block w-3 h-3 bg-nav hover:bg-selected-nav">
-                <span class="bg-black px-2 py-1 ml-8 opacity-0">Contact</span>
-              </a>
-            </div>
-          </nav>
-        </div>
-        
-        <header class="py-4">
-
-          
-        </header>
-      </header>
-      <main></main>
-
-      <footer></footer>
-    </div>
-    <!-- ./container-->
-  </body>
-
-  <!--
-  <body class="bg-body text-text font-poppins">
-    <header class="py-4">
-      <div class="container flex justify-between items-center mx-auto px-12 md:px-6 lg:px-24 w-full">
+      <nav id="main-nav" class="container flex justify-between items-center mx-auto w-full">
         <div class="text-xl font-bold text-accent">Adam Mazurek</div>
         <div class="nav hidden md:flex space-x-12 items-center">
           <a href="#home" class="hover:text-accent text-secondary">Home</a>
           <a href="#about" class="hover:text-accent">About</a>
           <a href="#work" class="hover:text-accent">My Work</a>
           <a href="#conatact">
-            <button class="px-6 py-2 border border-accent font-bold text-accent hover:bg-secondary-10 transition ease-in-out delay-50">Hire Me</button>
+            <button class="px-4 py-2 border border-accent font-bold text-accent hover:bg-secondary-10 transition ease-in-out delay-50">
+              Hire Me
+            </button>
           </a>
         </div>
-        <div class="md:hidden">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M35 30H20V26.6667H35V30ZM35 21.6667H5V18.3333H35V21.6667ZM35 13.3333H5V10H35V13.3333Z" fill="#00FFFF" />
-          </svg>
-        </div>
-      </div>
-    </header>
-
-    <div class="container mt-4 flex justify-between itemst-center mx-auto px-4 md:px-14 lg:px-24 w-full">
-      <div class="flex flex-wrap md:flex-nowrap">
-        <nav class="inline-block lg:mr-24 lg:w-4 fixed left-precentage hidden xl:block">
+      </nav>
+      <nav id="left-nav" class="flex flex-wrap md:flex-nowrap">
+        <div class="inline-block lg:mr-24 lg:w-4 fixed left-precentage hidden xl:block">
           <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-44">
             <a href="#" class="nav-square block w-3 h-3 bg-nav active hover:bg-selected-nav">
-              <span class="bg-black px-2 py-1 ml-8 opacity-0">Home</span>
+              <span class="bg-black px-2 py-1 ml-4 opacity-0">Home</span>
             </a>
             <a href="#" class="nav-square block w-3 h-3 bg-nav hover:bg-selected-nav">
-              <span class="bg-black px-2 py-1 ml-8 opacity-0">About</span>
+              <span class="bg-black px-2 py-1 ml-4 opacity-0">About</span>
             </a>
             <a href="#" class="nav-square block w-3 h-3 bg-nav hover:bg-selected-nav">
-              <span class="bg-black px-2 py-1 ml-8 opacity-0">Work</span>
+              <span class="bg-black px-2 py-1 ml-4 opacity-0">Work</span>
             </a>
             <a href="#" class="nav-square block w-3 h-3 bg-nav hover:bg-selected-nav">
-              <span class="bg-black px-2 py-1 ml-8 opacity-0">Contact</span>
+              <span class="bg-black px-2 py-1 ml-4 opacity-0">Contact</span>
             </a>
           </div>
-        </nav>
+        </div>
+      </nav>
 
-        <section id="hero" class="flex flex-wrap justify-center md:justfy-start max-w-xl mt-0 md:my-16">
-          <h1 class="font-bold text-5xl md:text-6xl lg:text-7xl text-center md:text-left mt-16">
+      <header class="mt-2 mb-20 flex flex-col md:flex-row">
+        <div id="hero" class="flex flex-wrap justify-center lg:justfy-start max-w-xl mt-0 md:my-5">
+          <h1 class="font-bold text-4xl lg:text-6xl text-center md:text-left mt-16">
             Building<br />
             beautiful web experience
           </h1>
           <div class="w-full flex justify-center md:justify-start">
             <a href="#work">
-              <button class="px-6 py-3 my-8 border border-accent flex items-center font-bold space-x-2 text-accent hover:bg-secondary-10 transition ease-in-out delay-50">
-                <div>
-                  <svg
-                    width="26"
-                    height="26"
-                    version="1.1"
-                    id="Icons"
-                    xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                    x="0px"
-                    y="0px"
-                    viewBox="0 0 32 32"
-                    style="enable-background: new 0 0 32 32"
-                    xml:space="preserve"
-                  >
-                    <style type="text/css">
-                      .st0 {
-                        fill: none;
-                        stroke: #00fff5;
-                        stroke-width: 2;
-                        stroke-linecap: round;
-                        stroke-linejoin: round;
-                        stroke-miterlimit: 10;
-                      }
-                    </style>
-                    <path class="st0" d="M29,16c0,0-5.8,8-13,8S3,16,3,16s5.8-8,13-8S29,16,29,16z" id="id_101" style="stroke: #00fff5"></path>
-                    <circle class="st0" cx="16" cy="16" r="4" id="id_102" style="stroke: #00fff5"></circle>
-                  </svg>
-                </div>
-                <span>My work.</span>
+              <button
+                class="px-4 py-2 my-4 border border-accent flex items-center font-bold space-x-2 text-accent hover:bg-secondary-10 transition ease-in-out delay-50 text-lg">
+                <i class="text-lg icon zmdi zmdi-eye"></i> My Work
               </button>
             </a>
           </div>
-          <img src="img/hero-icon.svg" alt="brain code" class="hero-img w-1/2 md:absolute md:mt-0 right-0 -z-1" />
-        </section>
-      </div>
+        </div>
+        <div class="container flex justify-center">
+          <img src="img/hero-icon.svg" alt="brain code" class="hero-img -z-1" />
+        </div>
+      </header>
+
+      <main>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat hic cumque aspernatur commodi dolorum molestiae quis incidunt
+          nisi dicta fugit eius debitis ratione corporis maiores fugiat consequuntur, consequatur rerum magnam! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Enim tempora natus nesciunt hic quae reiciendis velit earum officiis quasi harum sunt, quam culpa
+          aut nobis, officia sapiente inventore illo eum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum beatae illo
+          perspiciatis dolor, suscipit obcaecati ab exercitationem sit quis harum numquam commodi maxime autem atque ad soluta? Quidem,
+          dolores facere.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat hic cumque aspernatur commodi dolorum molestiae quis incidunt
+          nisi dicta fugit eius debitis ratione corporis maiores fugiat consequuntur, consequatur rerum magnam! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Enim tempora natus nesciunt hic quae reiciendis velit earum officiis quasi harum sunt, quam culpa
+          aut nobis, officia sapiente inventore illo eum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum beatae illo
+          perspiciatis dolor, suscipit obcaecati ab exercitationem sit quis harum numquam commodi maxime autem atque ad soluta? Quidem,
+          dolores facere.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat hic cumque aspernatur commodi dolorum molestiae quis incidunt
+          nisi dicta fugit eius debitis ratione corporis maiores fugiat consequuntur, consequatur rerum magnam! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Enim tempora natus nesciunt hic quae reiciendis velit earum officiis quasi harum sunt, quam culpa
+          aut nobis, officia sapiente inventore illo eum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum beatae illo
+          perspiciatis dolor, suscipit obcaecati ab exercitationem sit quis harum numquam commodi maxime autem atque ad soluta? Quidem,
+          dolores facere.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat hic cumque aspernatur commodi dolorum molestiae quis incidunt
+          nisi dicta fugit eius debitis ratione corporis maiores fugiat consequuntur, consequatur rerum magnam! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Enim tempora natus nesciunt hic quae reiciendis velit earum officiis quasi harum sunt, quam culpa
+          aut nobis, officia sapiente inventore illo eum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum beatae illo
+          perspiciatis dolor, suscipit obcaecati ab exercitationem sit quis harum numquam commodi maxime autem atque ad soluta? Quidem,
+          dolores facere.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat hic cumque aspernatur commodi dolorum molestiae quis incidunt
+          nisi dicta fugit eius debitis ratione corporis maiores fugiat consequuntur, consequatur rerum magnam! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Enim tempora natus nesciunt hic quae reiciendis velit earum officiis quasi harum sunt, quam culpa
+          aut nobis, officia sapiente inventore illo eum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum beatae illo
+          perspiciatis dolor, suscipit obcaecati ab exercitationem sit quis harum numquam commodi maxime autem atque ad soluta? Quidem,
+          dolores facere.
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat hic cumque aspernatur commodi dolorum molestiae quis incidunt
+          nisi dicta fugit eius debitis ratione corporis maiores fugiat consequuntur, consequatur rerum magnam! Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Enim tempora natus nesciunt hic quae reiciendis velit earum officiis quasi harum sunt, quam culpa
+          aut nobis, officia sapiente inventore illo eum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum beatae illo
+          perspiciatis dolor, suscipit obcaecati ab exercitationem sit quis harum numquam commodi maxime autem atque ad soluta? Quidem,
+          dolores facere.
+        </p>
+      </main>
+
+      <footer></footer>
     </div>
-    <div class="container flex justify-between items-center mx-auto px-12 md:px-6 lg:px-24 w-full">
-      <section id="work">
-        <h2 class="secondary-title">My Work</h2>
-      </section>
-    </div>
+    <!-- ./container-->
   </body>
---></html>
+</html>
