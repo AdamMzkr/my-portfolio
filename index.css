@@ -8,9 +8,9 @@ html,
 body {
   scroll-behavior: smooth;
 }
-* {
+/* * {
   border: 0.1px solid #626060;
-}
+} */
 
 .left-50 {
   left: 50%;
@@ -32,10 +32,11 @@ body {
 .secondary-title {
   @apply text-3xl font-bold;
 }
-.secondary-title::before {
+/* .secondary-title::before {
   content: "";
-  @apply block w-12 h-2 bg-accent rounded-full mb-1;
-}
+  @apply absolute block w-10 h-2 bg-accent  mb-1;
+} */
+
 
 .section-paragraph {
   @apply text-secondary my-6 w-full max-w-3xl;
@@ -64,3 +65,34 @@ body {
 .hero-img {
   max-height: 32rem;
 }
+@keyframes left-move {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes right-move {
+  0% {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateX(0px);
+  }
+}
+
+.main-title{
+  animation: left-move 1s;
+}
+.hero-img{
+  animation:right-move 1s;
+}
+
+
+
