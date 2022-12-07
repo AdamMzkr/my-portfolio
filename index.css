@@ -30,16 +30,24 @@ body {
 }
 
 .secondary-title {
-  @apply text-3xl font-bold;
+  @apply text-4xl font-bold;
 }
 /* .secondary-title::before {
   content: "";
   @apply absolute block w-10 h-2 bg-accent  mb-1;
 } */
-
+.water-text{
+  @apply text-accent;
+ font-size:12rem;
+ opacity:0.05;
+ position:absolute;
+ z-index:-1;
+ margin-top:-6rem;
+ font-weight: bold;
+}
 
 .section-paragraph {
-  @apply text-secondary my-6 w-full max-w-3xl;
+  @apply text-secondary my-6 w-full max-w-3xl ;
 }
 .badge {
   @apply px-4 py-2 text-sm rounded bg-accent;
@@ -86,12 +94,28 @@ body {
     transform: translateX(0px);
   }
 }
-
-.main-title{
-  animation: left-move 1s;
+@keyframes drop{
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 100%;
+    transform: translateY(0px);
+  }
 }
-.hero-img{
+.animate-right{
   animation:right-move 1s;
+}
+.animate-left{
+  animation:left-move 1s;
+}
+.animate-drop{
+  animation:drop 1s;
+}
+
+.link i{
+  font-size:1.5em;
 }
 
 
