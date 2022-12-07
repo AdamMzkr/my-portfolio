@@ -50,7 +50,7 @@
 
       <header class="mt-2 mb-20 flex flex-col md:flex-row">
         <div id="hero" class="flex flex-wrap justify-center lg:justfy-start max-w-xl mt-0 md:my-5">
-          <h1 class="main-title font-bold text-4xl lg:text-6xl text-center md:text-left mt-16 hover:animation-wiggle">
+  <h1 class="main-title font-bold text-4xl lg:text-6xl text-center md:text-left mt-16 animate-left ">
             Building<br />
             beautiful web experience
           </h1>
@@ -64,15 +64,16 @@
           </div>
         </div>
         <div class="container flex justify-center">
-          <img src="img/hero-icon.svg" alt="brain code" class="hero-img -z-1" />
+          <img src="img/hero-icon.svg" alt="brain code" class="hero-img -z-1 animate-right" />
         </div>
       </header>
 
       <main>
-        <section id="about" class="mb-10 py-5">
+        <section id="about" class="mb-10 py-5 animate-drop">
+          <span class="water-text hidden md:block">About Me</span>
           <h2 class="secondary-title text-center md:text-left">About Me</h2>
           <div class="container flex  justify-center flex-col md:flex-row justify-center items-center">
-            <div class="picture my-10 h-80 w-80 md:w-1/3 h-80 border-2 border-accent "></div>
+            <div class="picture my-10 h-80 w-80 md:w-1/3 h-80 border-2 border-accent"></div>
             <div class="description  h-full md:h:48 w-full md:w-2/3 md:mx-10 p-3 md:mt-2  bg-dark">
               <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iure in consequatur recusandae quam laudantium, excepturi assumenda expedita vel asperiores minima maxime facilis quas alias veniam modi. Quibusdam, illo nostrum?</p>
               <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iure in consequatur recusandae quam laudantium, excepturi assumenda expedita vel asperiores minima maxime facilis quas alias veniam modi. Quibusdam, illo nostrum?</p>
@@ -81,31 +82,80 @@
         </section>
 
         <section id="work">
+          <span class="water-text hidden md:block">My Work</span>
           <h2 class="secondary-title text-center md:text-left my-5">My Work</h2>
 
           <article class="project container flex flex-col md:flex-row">
             
-            <div class="description h-full md:h-40 w-full md:w-2/3 p-3 md:mt-20 md:-mr-20 bg-dark">
-              <h3 class="text-accent p-2">project Name</h3>
-              <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iure in consequatur recusandae quam laudantium, excepturi assumenda expedita vel asperiores minima maxime facilis quas alias veniam modi. Quibusdam, illo nostrum?</p>
+            <div class="description h-full md:h-48 w-full md:w-2/3 p-3 md:mt-20 md:-mr-20 bg-dark">
+              <h3 class="text-accent p-2 bold">project Name</h3>
+              <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iure in consequatur recusandae quam laudantium</p>
+              <div class="technology flex flex-row">
+                <button class="mx-2 px-2 py-1 text-xs border border-accent font-bold text-accent bg-secondary-10">
+                  HTML
+                </button>
+                <button class="mx-2 px-2 py-1 text-xs border border-accent font-bold text-accent bg-secondary-10">
+                  CSS
+                </button>
+              </div>
+              <div class="links mx-2 my-3 text-accent ">
+                <a class="link hover:text-text mr-2" href="#">
+                  <i class="zmdi zmdi-github "></i>
+                </a>
+                <a class="link hover:text-text mr-2" href="#">
+                  <i class="zmdi zmdi-open-in-browser "></i>
+                </a>
+              </div>
             </div>
             <div class="picture my-10 md:w-1/2 h-80 border-2 border-accent -z-1"></div>
           </article>
 
           <article class="project container flex flex-col md:flex-row">
             
-            <div class="description h-full md:h-40 w-full md:w-2/3 p-3 md:mt-20 md:-ml-20 bg-dark md:order-2">
+            <div class="description h-full md:h-48 w-full md:w-2/3 p-3 md:mt-20 md:-ml-20 bg-dark md:order-2">
               <h3 class="text-accent p-2">project Name</h3>
-              <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iure in consequatur recusandae quam laudantium, excepturi assumenda expedita vel asperiores minima maxime facilis quas alias veniam modi. Quibusdam, illo nostrum?</p>
+              <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iure in consequatur recusandae quam laudantium</p>
+              <div class="technology flex flex-row">
+                <button class="mx-2 px-2 py-1 text-xs border border-accent font-bold text-accent bg-secondary-10">
+                  HTML
+                </button>
+                <button class="mx-2 px-2 py-1 text-xs border border-accent font-bold text-accent bg-secondary-10">
+                  CSS
+                </button>
+              </div>
+              <div class="links mx-2 my-3 text-accent ">
+                <a class="link hover:text-text mr-2" href="#">
+                  <i class="zmdi zmdi-github "></i>
+                </a>
+                <a class="link hover:text-text mr-2" href="#">
+                  <i class="zmdi zmdi-open-in-browser "></i>
+                </a>
+              </div>
             </div>
             <div class="picture my-10 md:w-1/2 h-80 border-2 border-accent -z-1 md:order-1"></div>
           </article>
 
           <article class="project container flex flex-col md:flex-row">
             
-            <div class="description h-full md:h-40 w-full md:w-2/3 p-3 md:mt-20 md:-mr-20 bg-dark">
+            <div class="description h-full md:h-48 w-full md:w-2/3 p-3 md:mt-20 md:-mr-20 bg-dark">
               <h3 class="text-accent p-2">project Name</h3>
-              <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iure in consequatur recusandae quam laudantium, excepturi assumenda expedita vel asperiores minima maxime facilis quas alias veniam modi. Quibusdam, illo nostrum?</p>
+              <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iure in consequatur recusandae quam laudantium</p>
+              <div class="technology flex flex-row">
+                <button class="mx-2 px-2 py-1 text-xs border border-accent font-bold text-accent bg-secondary-10">
+                  HTML
+                </button>
+                <button class="mx-2 px-2 py-1 text-xs border border-accent font-bold text-accent bg-secondary-10">
+                  CSS
+                </button>
+              </div>
+              <div class="links mx-2 my-3 text-accent ">
+                <a class="link hover:text-text mr-2" href="#">
+                  <i class="zmdi zmdi-github "></i>
+                </a>
+                <a class="link hover:text-text mr-2" href="#">
+                  <i class="zmdi zmdi-open-in-browser "></i>
+                </a>
+              </div>
             </div>
             <div class="picture my-10 md:w-1/2 h-80 border-2 border-accent -z-1"></div>
           </article>
