@@ -114,8 +114,15 @@ body {
   animation:drop 1s;
 }
 
-.link i{
-  font-size:1.5em;
+.img-l:hover{
+  transform:translate(20px,20px);
+  transition: transform 0.5s ;
+  @apply border-2;
+}
+.img-r:hover{
+  transform:translate(-20px,20px);
+  transition: transform 0.5s;
+  @apply border-2;
 }
 
 
