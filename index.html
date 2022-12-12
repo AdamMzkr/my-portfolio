@@ -10,9 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body class="bg-body text-text font-poppins">
     <div class="container border-2 mx-auto pt-4 px-12 md:px-6 lg:px-24 w-full">
@@ -50,7 +48,7 @@
 
       <header class="mt-2 mb-20 flex flex-col md:flex-row">
         <div id="hero" class="flex flex-wrap justify-center lg:justfy-start max-w-xl mt-0 md:my-5">
-  <h1 class="main-title font-bold text-4xl lg:text-6xl text-center md:text-left mt-16 animate-left ">
+          <h1 class="main-title font-bold text-4xl lg:text-6xl text-center md:text-left mt-16 animate-left ">
             Building<br />
             beautiful web experience
           </h1>
@@ -76,7 +74,7 @@
             <div class="picture my-10 h-81 w-80  border-2 border-accent">
               <img class="h-80 w-70"src="img/face.jpg" alt="my-face">
             </div>
-            <div class="description  h-full md:h:48 w-full md:w-2/3 md:mx-10 p-3 md:mt-2  bg-dark">
+            <div class="description">
               <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iure in consequatur recusandae quam laudantium, excepturi assumenda expedita vel asperiores minima maxime facilis quas alias veniam modi. Quibusdam, illo nostrum?</p>
               <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iure in consequatur recusandae quam laudantium, excepturi assumenda expedita vel asperiores minima maxime facilis quas alias veniam modi. Quibusdam, illo nostrum?</p>
             </div>
@@ -85,33 +83,33 @@
 
         <section id="work">
           <span class="water-text hidden md:block">My Work</span>
-          <h2 class="secondary-title text-center md:text-left my-5">My Work</h2>
+          <h2 class="secondary-title text-center md:text-left my-3">My Work</h2>
 
           <article class="project container flex flex-col md:flex-row">
-            
-            <div class="description h-full  -mb-20 ml-4 md:h-full w-full md:w-2/3 p-3 md:mt-20 md:-mr-20 bg-dark z-10">
+
+            <div class="description md:-mr-10 md:mt-10">
               <h3 class="text-accent text-xl p-2 font-bold">My Personal Portfolio</h3>
               <p class="p-2">This is my personal portfolio. I did the design in Figma, encoded in tailwind css framework. It is also 100% responsive.</p>
               <div class="technology flex flex-row">
-                <button class="mx-2 px-2 py-1 text-xs  font-bold text-accent bg-secondary-10">
+                <button class="btn">
                   Tailwindcss
                 </button>
-                <button class="mx-2 px-2 py-1 text-xs font-bold text-accent bg-secondary-10">
+                <button class="btn">
                   HTML
                 </button>
-                <button class="mx-2 px-2 py-1 text-xs  font-bold text-accent bg-secondary-10">
+                <button class="btn">
                   CSS
                 </button>
-                <button class="mx-2 px-2 py-1 text-xs  font-bold text-accent bg-secondary-10">
+                <button class="btn">
                   JS
                 </button>
               </div>
               <div class="links mx-2 my-3 text-accent px-1">
                 <a class="link hover:text-text mr-2" href="#">
-                  <i class="zmdi zmdi-github "></i>
+                  <i class='bx bxl-github'></i>
                 </a>
                 <a class="link hover:text-text mr-2" href="https://adammzkr.github.io/my-portfolio/">
-                  <i class="zmdi zmdi-open-in-browser "></i>
+                  <i class='bx bx-link-external'></i>
                 </a>
               </div>
             </div>
@@ -121,79 +119,116 @@
               <img class="img-r"src="img/mockup.jpg" alt="presentation website on mockup">
               </a>
             </div>
-            
-          
-          
+
           </article>
 
           <article class="project container flex flex-col md:flex-row">
-            
-            <div class="description h-full -mb-20 ml-4 md:h-48 w-full md:w-2/3 p-3 md:mt-20 md:-ml-20 bg-dark md:order-2 z-10">
-              <h3 class="text-accent text-xl p-2 font-bold">Interactiv card details</h3>
+
+            <div class="description md:-ml-10 md:mt-10 md:order-2">
+              <h3 class="text-accent text-xl p-2 font-bold">Interactive card details</h3>
               <p class="p-2">This is solution of front-end mentor challenge. Its responsive and interactive. Have a validated form and some animations. To finish this i use html/css and vanila JS.</p>
               <div class="technology flex flex-row">
-                <button class="mx-2 px-2 py-1 text-xs  font-bold text-accent bg-secondary-10">
+                <button class="btn">
                   HTML
                 </button>
-                <button class="mx-2 px-2 py-1 text-xs  font-bold text-accent bg-secondary-10">
+                <button class="btn">
                   CSS
                 </button>
-                <button class="mx-2 px-2 py-1 text-xs  font-bold text-accent bg-secondary-10">
+                <button class="btn">
                   JS
                 </button>
               </div>
-              <div class="links mx-2 my-3 text-accent ">
+              <div class="links mx-2 my-3 text-accent px-1">
                 <a class="link hover:text-text mr-2" href="#">
-                  <i class="zmdi zmdi-github "></i>
+                  <i class='bx bxl-github'></i>
                 </a>
                 <a class="link hover:text-text mr-2" href="https://adammzkr.github.io/Front-End-Mentor-lvl2/interactive-card-details/index.html">
-                  <i class="zmdi zmdi-open-in-browser "></i>
+                  <i class='bx bx-link-external'></i>
                 </a>
               </div>
             </div>
-            <div class="picture my-10 md:w-1/2  border-2 border-accent z-0">
-              <div class="overlay bg-secondary-25  md:w-1/2 flex justify-center items-center" >
-              </div>
+           
+            <div class="picture md:w-1/2 border-2 border-accent z-0">
               <a class="link" href="https://adammzkr.github.io/Front-End-Mentor-lvl2/interactive-card-details/index.html">
               <img class="img-l"src="img/mockup3.jpg" alt="presentation website on mockup">
               </a>
             </div>
-          </article>
 
+          </article>
+          
           <article class="project container flex flex-col md:flex-row">
-            
-            <div class="description h-full -mb-20 ml-4 md:h-48 w-full md:w-2/3 p-3 md:mt-20 md:-mr-20 bg-dark z-10">
+
+            <div class="description md:-mr-10 md:mt-10">
               <h3 class="text-accent text-xl p-2 font-bold">Snap landing page</h3>
               <p class="p-2">This is solution of front-end mentor challenge. Its responsive landing page with dropdown menu. To finish this i use a bootstrap framework.</p>
               <div class="technology flex flex-row">
-                <button class="mx-2 px-2 py-1 text-xs  font-bold text-accent bg-secondary-10">
+                <button class="btn">
                   Bootstrap
                 </button>
-                <button class="mx-2 px-2 py-1 text-xs  font-bold text-accent bg-secondary-10">
+                <button class="btn">
                   HTML
                 </button>
-                <button class="mx-2 px-2 py-1 text-xs  font-bold text-accent bg-secondary-10">
+                <button class="btn">
                   CSS
                 </button>
-                <button class="mx-2 px-2 py-1 text-xs  font-bold text-accent bg-secondary-10">
+                <button class="btn">
+                  JS
+                </button>
+              </div>
+              <div class="links mx-2 my-3 text-accent px-1">
+                <a class="link hover:text-text mr-2" href="#">
+                  <i class='bx bxl-github'></i>
+                </a>
+                <a class="link hover:text-text mr-2" href="https://adammzkr.github.io/Front-End-Mentor-lvl2/intro-section-dropdown-nav/index.html">
+                  <i class='bx bx-link-external'></i>
+                </a>
+              </div>
+            </div>
+           
+            <div class="picture md:w-1/2 border-2 border-accent z-0">
+              <a class="link" href="https://adammzkr.github.io/Front-End-Mentor-lvl2/intro-section-dropdown-nav/index.html">
+              <img class="img-r"src="img/mockup4.jpg" alt="presentation website on mockup">
+              </a>
+            </div>
+
+          </article>
+
+          <!-- 
+
+          <article class="project flex flex-col md:flex-row">
+            
+            <div class="description md:-mr-10">
+              <h3 class="text-accent text-xl p-2 font-bold">Snap landing page</h3>
+              <p class="p-2">This is solution of front-end mentor challenge. Its responsive landing page with dropdown menu. To finish this i use a bootstrap framework.</p>
+              <div class="technology flex flex-row">
+                <button class="btn">
+                  Bootstrap
+                </button>
+                <button class="btn">
+                  HTML
+                </button>
+                <button class="btn">
+                  CSS
+                </button>
+                <button class="btn">
                   JS
                 </button>
               </div>
               <div class="links mx-2 my-3 text-accent ">
                 <a class="link hover:text-text mr-2" href="#">
-                  <i class="zmdi zmdi-github "></i>
+                  <i class='bx bxl-github'></i>
                 </a>
                 <a class="link hover:text-text mr-2" href="https://adammzkr.github.io/Front-End-Mentor-lvl2/intro-section-dropdown-nav/index.html">
-                  <i class="zmdi zmdi-open-in-browser "></i>
+                  <i class='bx bx-link-external'></i>
                 </a>
               </div>
             </div>
-             <div class="picture my-10 w-1/2 border-2 border-accent z-0">
+             <div class="picture md:w-1/2 border-2 border-accent z-0">
               <a class="link" href="https://adammzkr.github.io/Front-End-Mentor-lvl2/intro-section-dropdown-nav/index.html">
               <img class="img-r" src="img/mockup4.jpg" alt="presentation website on mockup">
               </a>
             </div>
-          </article>
+          </article> -->
 
          
           
