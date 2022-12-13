@@ -555,10 +555,6 @@ video {
   position: absolute;
 }
 
-.z-0 {
-  z-index: 0;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -608,8 +604,8 @@ video {
   margin-top: 4rem;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
+.ml-20 {
+  margin-left: 5rem;
 }
 
 .mr-2 {
@@ -707,12 +703,12 @@ video {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border {
   border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .border-accent {
@@ -868,15 +864,12 @@ body {
 }
 
 .secondary-title {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
   font-size: 2.25rem;
   line-height: 2.5rem;
   font-weight: 700;
 }
-
-/* .secondary-title::before {
-  content: "";
-  @apply absolute block w-10 h-2 bg-accent  mb-1;
-} */
 
 .water-text {
   --tw-text-opacity: 1;
@@ -924,10 +917,12 @@ body {
 
 .nav-square:hover span {
   opacity: 1;
+  z-index:20;
 }
 
 .icon {
   margin-right: 0.75rem;
+  font-size:2rem;
 }
 
 .active {
@@ -969,6 +964,22 @@ body {
   }
 }
 
+.about-text {
+  z-index: 10;
+  margin-top: 1.25rem;
+  height: 100%;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 37 51 / var(--tw-bg-opacity));
+  padding: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  .about-text {
+    width: 66.666667%;
+  }
+}
+
 .btn {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -987,6 +998,36 @@ body {
 .bx{
   padding:0.1rem 0;
   font-size: 1.25rem;
+}
+
+.project {
+  margin-top: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .project {
+    margin-top: 5rem;
+  }
+}
+
+.picture {
+  z-index: 0;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 255 245 / var(--tw-border-opacity));
+}
+
+@media (min-width: 768px) {
+  .picture {
+    width: 50%;
+    border-width: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .picture {
+    border-width: 2px;
+  }
 }
 
 @keyframes left-move {
@@ -1098,10 +1139,6 @@ body {
     display: flex;
   }
 
-  .md\:w-1\/2 {
-    width: 50%;
-  }
-
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1127,6 +1164,10 @@ body {
 @media (min-width: 1024px) {
   .lg\:mr-24 {
     margin-right: 6rem;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:w-4 {
