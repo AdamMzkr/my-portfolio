@@ -67,8 +67,11 @@ body {
   z-index:20;
 }
 .icon {
+  @apply text-accent;
+  padding-top:0.3rem;
   margin-right: 0.75rem;
   font-size:2rem;
+  
 }
 .active {
   @apply bg-accent;
@@ -82,16 +85,21 @@ body {
 .description{
   @apply h-full -mb-5 ml-4 md:ml-0  mt-5 md:mt-20 w-full md:w-2/3 p-3  bg-dark z-10;
 }
+.form-container{
+  @apply h-full  ml-4 md:ml-0  mt-5 w-full md:w-2/3 p-3  bg-transparent z-10;
+}
+
 .about-text{
   @apply h-full    mt-5  w-full md:w-2/3 p-3  bg-dark z-10;
 }
 .btn{
   @apply mx-2 px-2 py-1 text-xs font-bold text-accent bg-secondary-10;
 }
-.bx{
-  padding:0.1rem 0;
-  font-size: 1.25rem;
+
+.social-box{
+  @apply flex flex-row justify-start items-center my-2;
 }
+
 .project{
   @apply mt-10 md:mt-20;
 }
@@ -148,6 +156,14 @@ body {
   transform:translate(-20px,20px);
   transition: transform 0.5s;
   @apply border-2;
+}
+
+.input-box .box:focus-within ~ label,
+.input-box .box:not(:placeholder-shown) ~ label {
+  @apply transform scale-75 -translate-y-4 z-0 ml-3 px-1 py-0;
+}
+.box:focus-within ~ label {
+  @apply text-accent;
 }
 
 
