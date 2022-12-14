@@ -68,7 +68,7 @@
 
       <main>
         <section id="about" class="py-5">
-          <span class="water-text hidden md:block">About Me</span>
+          <span class="water-text hidden md:block">About</span>
           <h2 class="secondary-title text-center md:text-left">About Me</h2>
           <div class="container flex  justify-center flex-col md:flex-row justify-center items-center">
             <div class="my-10 h-81 w-80  border-2 border-accent">
@@ -82,11 +82,11 @@
         </section>
 
         <section id="work">
-          <span class="water-text hidden lg:block">My Work</span>
+          <span class="water-text hidden lg:block">Work</span>
           <h2 class="secondary-title text-center md:text-left my-3">My Work</h2>
 
             <!-- project #1 portfolio -->
-          <article id="p3"class="project container flex flex-col md:flex-row">
+          <article id="p1"class="project container flex flex-col md:flex-row">
 
             <div class="description md:-mr-10 md:mt-10">
               <h3 class="text-accent text-xl p-2 font-bold">My Personal Portfolio</h3>
@@ -159,7 +159,7 @@
           </article>
 
           <!-- project #3 snap -->
-          <article  id="p1"class="project container flex flex-col md:flex-row">
+          <article  id="p3"class="project container flex flex-col md:flex-row">
 
             <div class="description md:-mr-10 md:mt-10">
               <h3 class="text-accent text-xl p-2 font-bold">Snap landing page</h3>
@@ -199,8 +199,61 @@
 
         </section>
 
-        <section id="contact" class="my-10">
+        <section id="contact">
+
+          <span class="water-text hidden md:block">Contact</span>
           <h2 class="secondary-title">Contact Me</h2>
+
+          <div  class="container my-10  flex flex-col md:flex-row">
+
+            <div class="form-container md:-mr-10 md:mt-10">
+              <form action="">
+                <div class="input-box relative border border-accent focus-within:border-accent my-10">
+                  <input type="text" name="name" placeholder=" " class=" box block p-4 w-full text-lg appearance-none focus:outline-none bg-transparent" />
+                  <label for="name"  class="absolute bg-body top-0 text-lg border-accent  p-3 -z-1 duration-300 origin-0 ">Your name</label>
+                </div>
+                <div class="input-box relative border border-accent focus-within:border-accent my-10">
+                  <input type="email" name="email" placeholder=" " class=" box block p-4 w-full text-lg appearance-none focus:outline-none bg-transparent" />
+                  <label for="email"  class="absolute bg-body top-0 text-lg border-accent  p-3 -z-1 duration-300 origin-0 ">Email address</label>
+                </div>
+                <div class="input-box relative border border-accent focus-within:border-accent my-10">
+                  <textarea name="message" class="box block p-4 w-full text-lg appearance-none focus:outline-none bg-transparent"  
+                  rows="4" placeholder=""></textarea>
+                  <label for="message"  class="absolute bg-body top-0 text-lg border-accent  p-4 -z-1 duration-300 origin-0 ">Write your message here</label>
+                </div>
+                <button
+                class="px-4 py-2 my-4 border border-accent flex items-center font-bold space-x-2 text-accent hover:bg-secondary-10 transition ease-in-out delay-50 text-lg">
+                <i class='bx bx-send bx-sm icon'></i>Send a message
+              </button>
+              </form>
+             
+            </div>
+           
+           
+            <div class="socials ml:0 md:ml-20 pt-20 flex flex-column justify-center items-start">
+             
+              <div class="contaniner">
+                <h3 class="my-5  text-xl mb:text-2xl"> Get in touch in another way.</h3>
+                <div class="social-box">
+                  <i class='bx bx-envelope icon'></i> <a href="">adm.mzkr@gmail.com</a> 
+                </div>
+                <div class="social-box">
+                  <i class='bx bxl-github icon'></i> <a href="">/github.com/AdamMzkr</a>
+                </div>
+                <div class="social-box">
+                  <i class='bx bxl-codepen icon' ></i> <a href="">/codepen.io/adammzkr</a>
+                </div>
+              </div>
+              
+            </div>
+
+          </div>
+
+
+
+          
+         
+          
         </section>
       </main>
 
