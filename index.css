@@ -79,6 +79,10 @@ body {
 .hero-img {
   max-height: 32rem;
 }
+.button{
+ @apply px-4 py-2 my-2 border border-accent flex items-center font-bold text-accent hover:bg-secondary-10  text-lg;
+ transition: ease-in-out 0.3s;
+}
 .project{
   @apply mb-10 md:mb-5;
 }
@@ -86,7 +90,7 @@ body {
   @apply h-full -mb-5 ml-4 md:ml-0  mt-5 md:mt-20 w-full md:w-2/3 p-3  bg-dark z-10;
 }
 .form-container{
-  @apply h-full  ml-4 md:ml-0  mt-5 w-full md:w-2/3 p-3  bg-transparent z-10;
+  @apply h-full  ml-4 md:ml-0  mt-5 w-full bg-transparent z-10;
 }
 
 .about-text{
@@ -157,13 +161,33 @@ body {
   transition: transform 0.5s;
   @apply border-2;
 }
-
+.input-box{
+  @apply relative border border-accent focus-within:border-accent my-5;
+}
+.input-box .box{
+ @apply block p-4 w-full text-lg appearance-none focus:outline-none bg-transparent;
+}
+.input-box .label{
+  @apply absolute bg-body top-0 text-lg border-accent  p-4 -z-1 duration-300 origin-0; 
+}
 .input-box .box:focus-within ~ label,
 .input-box .box:not(:placeholder-shown) ~ label {
   @apply transform scale-75 -translate-y-4 z-0 ml-3 px-1 py-0;
 }
 .box:focus-within ~ label {
   @apply text-accent;
+}
+
+.active{
+  display: block;
+}    
+.mobile-menu-container{
+  @apply bg-body;
+  z-index:100;
+  position:absolute;
+  
+  width:60%;
+  height: 100vh;
 }
 
 
