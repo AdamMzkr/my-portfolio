@@ -14,8 +14,12 @@
   </head>
   <body class="bg-body text-text font-poppins">
     <div class="container mx-auto pt-4 px-12 md:px-6 lg:px-24 w-full">
-      <nav id="main-nav" class="container flex justify-between items-center mx-auto w-full">
-        <div class="text-xl font-bold text-accent">Adam M</div>
+
+      
+      
+      
+      <nav id="main-nav" class="container hidden md:flex justify-between items-center mx-auto w-full">
+        <div class="text-xl font-bold text-accent">Adam M</div>  
         <div class="nav hidden md:flex space-x-12 items-center">
           <a href="#home" class="hover:text-accent text-secondary">Home</a>
           <a href="#about" class="hover:text-accent">About</a>
@@ -27,7 +31,27 @@
           </a>
         </div>
       </nav>
-      <nav id="left-nav" class="flex flex-wrap md:flex-nowrap">
+      
+     <div class="border md:hidden mobile-menu-container flex justify-center items-center">
+      <nav id="mobile-nav" class="border md:hidden items-center">
+        <div class="text-xl font-bold text-accent">Adam M</div>  
+        <div class="border nav flex flex-col h-60  items-center justify-around">
+          <a href="#home" class="hover:text-accent ">Home</a>
+          <a href="#about" class="hover:text-accent">About</a>
+          <a href="#work" class="hover:text-accent">My Work</a>
+          <a href="#conatact">
+            <button class="px-4 py-2 border border-accent font-bold text-accent hover:bg-secondary-10 transition ease-in-out delay-50">
+              Hire Me
+            </button>
+          </a>
+        </div>
+      </nav>
+    </div>
+      
+      
+      
+      
+        <nav id="left-nav" class="flex flex-wrap md:flex-nowrap">
         <div class="inline-block lg:mr-24 lg:w-4 fixed left-precentage hidden xl:block">
           <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-44">
             <a href="#hero" class="nav-square block w-3 h-3 bg-nav active hover:bg-selected-nav">
@@ -55,7 +79,7 @@
           <div class="w-full flex justify-center md:justify-start">
             <a href="#work">
               <button
-                class="px-4 py-2 my-4 border border-accent flex items-center font-bold space-x-2 text-accent hover:bg-secondary-10 transition ease-in-out delay-50 text-lg">
+                class="button">
                 <i class='bx bx-show-alt bx-sm icon'></i>My Work
               </button>
             </a>
@@ -204,49 +228,31 @@
           <span class="water-text hidden md:block">Contact</span>
           <h2 class="secondary-title">Contact Me</h2>
 
-          <div  class="container my-10  flex flex-col md:flex-row">
+          <div  class="container my-5  flex flex-col md:flex-row w-full ">
 
-            <div class="form-container md:-mr-10 md:mt-10">
-              <form action="">
-                <div class="input-box relative border border-accent focus-within:border-accent my-10">
-                  <input type="text" name="name" placeholder=" " class=" box block p-4 w-full text-lg appearance-none focus:outline-none bg-transparent" />
-                  <label for="name"  class="absolute bg-body top-0 text-lg border-accent  p-3 -z-1 duration-300 origin-0 ">Your name</label>
+            <div class="form-container flex justify-center items-center w-full">
+              <form action="" class="w-3/4">
+                <div class="input-box">
+                  <input type="text" name="name" placeholder=" " class="box" />
+                  <label for="name"  class="label">Your name</label>
                 </div>
-                <div class="input-box relative border border-accent focus-within:border-accent my-10">
-                  <input type="email" name="email" placeholder=" " class=" box block p-4 w-full text-lg appearance-none focus:outline-none bg-transparent" />
-                  <label for="email"  class="absolute bg-body top-0 text-lg border-accent  p-3 -z-1 duration-300 origin-0 ">Email address</label>
+                <div class="input-box">
+                  <input type="email" name="email" placeholder=" " class="box" />
+                  <label for="email"  class="label">Email address</label>
                 </div>
-                <div class="input-box relative border border-accent focus-within:border-accent my-10">
-                  <textarea name="message" class="box block p-4 w-full text-lg appearance-none focus:outline-none bg-transparent"  
+                <div class="input-box">
+                  <textarea name="message" class="box"  
                   rows="4" placeholder=""></textarea>
-                  <label for="message"  class="absolute bg-body top-0 text-lg border-accent  p-4 -z-1 duration-300 origin-0 ">Write your message here</label>
+                  <label for="message"  class="label">Write your message here</label>
                 </div>
                 <button
-                class="px-4 py-2 my-4 border border-accent flex items-center font-bold space-x-2 text-accent hover:bg-secondary-10 transition ease-in-out delay-50 text-lg">
+                class="button">
                 <i class='bx bx-send bx-sm icon'></i>Send a message
               </button>
               </form>
              
             </div>
            
-           
-            <div class="socials ml:0 md:ml-20 pt-20 flex flex-column justify-center items-start">
-             
-              <div class="contaniner">
-                <h3 class="my-5  text-xl mb:text-2xl"> Get in touch in another way.</h3>
-                <div class="social-box">
-                  <i class='bx bx-envelope icon'></i> <a href="">adm.mzkr@gmail.com</a> 
-                </div>
-                <div class="social-box">
-                  <i class='bx bxl-github icon'></i> <a href="">/github.com/AdamMzkr</a>
-                </div>
-                <div class="social-box">
-                  <i class='bx bxl-codepen icon' ></i> <a href="">/codepen.io/adammzkr</a>
-                </div>
-              </div>
-              
-            </div>
-
           </div>
 
 
