@@ -13,14 +13,14 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   <body class="bg-body text-text font-poppins">
-    <div class="container mx-auto pt-4 px-12 md:px-6 lg:px-24 w-full">
+   
 
       
       
       
-      <nav id="main-nav" class="container hidden md:flex justify-between items-center mx-auto w-full">
+      <nav id="main-nav" class="mx-auto pt-4 px-12 md:px-6 lg:px-24 w-full flex mx-auto w-full items-center  justify-between">
         <div class="text-xl font-bold text-accent">Adam M</div>  
-        <div class="nav hidden md:flex space-x-12 items-center">
+        <div class="nav hidden md:flex space-x-12 items-center hidden md:flex">
           <a href="#home" class="hover:text-accent text-secondary">Home</a>
           <a href="#about" class="hover:text-accent">About</a>
           <a href="#work" class="hover:text-accent">My Work</a>
@@ -32,10 +32,9 @@
         </div>
       </nav>
       
-     <div class="border md:hidden mobile-menu-container flex justify-center items-center">
-      <nav id="mobile-nav" class="border md:hidden items-center">
-        <div class="text-xl font-bold text-accent">Adam M</div>  
-        <div class="border nav flex flex-col h-60  items-center justify-around">
+     <div class="border md:hidden mobile-menu-container">
+      <nav id="mobile-nav" class="border h-full md:hidden flex justify-center items-center">
+        <div class="nav flex flex-col h-72  items-center justify-around text-2xl">
           <a href="#home" class="hover:text-accent ">Home</a>
           <a href="#about" class="hover:text-accent">About</a>
           <a href="#work" class="hover:text-accent">My Work</a>
@@ -51,7 +50,7 @@
       
       
       
-        <nav id="left-nav" class="flex flex-wrap md:flex-nowrap">
+        <nav id="left-nav" class=" container flex flex-wrap md:flex-nowrap">
         <div class="inline-block lg:mr-24 lg:w-4 fixed left-precentage hidden xl:block">
           <div class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-44">
             <a href="#hero" class="nav-square block w-3 h-3 bg-nav active hover:bg-selected-nav">
@@ -69,7 +68,7 @@
           </div>
         </div>
       </nav>
-
+      <div class="container mx-auto pt-4 px-12 md:px-6 lg:px-24 w-full">
       <header class="mt-2 mb-20 flex flex-col md:flex-row">
         <div id="hero" class="flex flex-wrap justify-center lg:justfy-start max-w-xl mt-0 md:my-5">
           <h1 class="main-title font-bold text-4xl lg:text-6xl text-center md:text-left mt-16 animate-left ">
