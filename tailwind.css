@@ -632,8 +632,12 @@ video {
   display: none;
 }
 
-.h-60 {
-  height: 15rem;
+.h-full {
+  height: 100%;
+}
+
+.h-72 {
+  height: 18rem;
 }
 
 .h-3 {
@@ -795,6 +799,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .text-4xl {
@@ -1227,12 +1236,14 @@ body {
 }
 
 .mobile-menu-container {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 31 34 / var(--tw-bg-opacity));
+  background-color: #013a3de8;
   z-index:100;
-  position:absolute;
-  width:60%;
-  height: 100vh;
+  right:0;
+  top:0;
+  position:fixed;
+  width:70%;
+  height: 100%;
+  margin:0;
 }
 
 .hover\:bg-secondary-10:hover {
