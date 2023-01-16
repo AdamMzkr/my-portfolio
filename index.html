@@ -18,22 +18,30 @@
       
       
       
-      <nav id="main-nav" class="mx-auto pt-4 px-12 md:px-6 lg:px-24 w-full flex mx-auto w-full items-center  justify-between">
+      <nav id="main-nav" class="fixed z-30 bg-body py-4 px-12 md:px-6 lg:px-24 flex mx-auto w-full items-center  justify-between">
         <div class="text-xl font-bold text-accent">Adam M</div>  
         <div class="nav hidden md:flex space-x-12 items-center hidden md:flex">
-          <a href="#home" class="hover:text-accent text-secondary">Home</a>
+          <a href="#main-container" class="hover:text-accent text-secondary">Home</a>
           <a href="#about" class="hover:text-accent">About</a>
           <a href="#work" class="hover:text-accent">My Work</a>
-          <a href="#conatact">
+          <a href="#contact">
             <button class="px-4 py-2 border border-accent font-bold text-accent hover:bg-secondary-10 transition ease-in-out delay-50">
               Hire Me
             </button>
           </a>
         </div>
+ 
+        
+        <div id="nav-icon3" class="md:hidden">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </nav>
-      
-     <div class="border md:hidden mobile-menu-container">
-      <nav id="mobile-nav" class="border h-full md:hidden flex justify-center items-center">
+
+     <div class="mobile-menu md:hidden">
+      <nav id="mobile-nav" class="h-full  flex justify-center items-center">
         <div class="nav flex flex-col h-72  items-center justify-around text-2xl">
           <a href="#home" class="hover:text-accent ">Home</a>
           <a href="#about" class="hover:text-accent">About</a>
@@ -68,14 +76,14 @@
           </div>
         </div>
       </nav>
-      <div class="container mx-auto pt-4 px-12 md:px-6 lg:px-24 w-full">
-      <header class="mt-2 mb-20 flex flex-col md:flex-row">
+      <div id ="main-container"class="container mx-auto  pt-4 px-12 md:px-6 lg:px-24 w-full">
+      <header class="mt-10 mb-20 flex flex-col md:flex-row">
         <div id="hero" class="flex flex-wrap justify-center lg:justfy-start max-w-xl mt-0 md:my-5">
-          <h1 class="main-title font-bold text-4xl lg:text-6xl text-center md:text-left mt-16 animate-left ">
+          <h1 class="main-title font-bold text-4xl lg:text-6xl mt-16 animate-left ">
             Building<br />
             beautiful web experience
           </h1>
-          <div class="w-full flex justify-center md:justify-start">
+          <div class="w-full flex justify-start">
             <a href="#work">
               <button
                 class="button">
@@ -90,14 +98,14 @@
       </header>
 
       <main>
-        <section id="about" class="py-5">
+        <section id="about">
           <span class="water-text hidden md:block">About</span>
-          <h2 class="secondary-title text-center md:text-left">About Me</h2>
+          <h2 class="secondary-title text-left">About Me</h2>
           <div class="container flex  justify-center flex-col md:flex-row justify-center items-center">
-            <div class="my-10 h-81 w-80  border-2 border-accent">
-              <img class="h-80 w-70"src="img/face.jpg" alt="my-face">
+            <div class="face">
+              <img src="img/face.jpg" alt="my-face">
             </div>
-            <div class="about-text ml-20">
+            <div class="about-text md:ml-20">
               <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iure in consequatur recusandae quam laudantium, excepturi assumenda expedita vel asperiores minima maxime facilis quas alias veniam modi. Quibusdam, illo nostrum?</p>
               <p class="p-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto iure in consequatur recusandae quam laudantium, excepturi assumenda expedita vel asperiores minima maxime facilis quas alias veniam modi. Quibusdam, illo nostrum?</p>
             </div>
@@ -105,8 +113,8 @@
         </section>
 
         <section id="work">
-          <span class="water-text hidden lg:block">Work</span>
-          <h2 class="secondary-title text-center md:text-left my-3">My Work</h2>
+          <span class="water-text hidden md:block">Work</span>
+          <h2 class="secondary-title text-left">My Work</h2>
 
             <!-- project #1 portfolio -->
           <article id="p1"class="project container flex flex-col md:flex-row">
@@ -225,12 +233,12 @@
         <section id="contact">
 
           <span class="water-text hidden md:block">Contact</span>
-          <h2 class="secondary-title">Contact Me</h2>
+          <h2 class="secondary-title text-left">Contact Me</h2>
 
           <div  class="container my-5  flex flex-col md:flex-row w-full ">
 
             <div class="form-container flex justify-center items-center w-full">
-              <form action="" class="w-3/4">
+              <form action="" class="w-full md:w-3/4">
                 <div class="input-box">
                   <input type="text" name="name" placeholder=" " class="box" />
                   <label for="name"  class="label">Your name</label>
