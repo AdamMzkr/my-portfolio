@@ -23,9 +23,23 @@ const observer = new IntersectionObserver(entries => {
   window.addEventListener('scroll', () => {
       updateList();
   })
+
   
   observer.observe(document.querySelector('#p1'));
   observer.observe(document.querySelector('#p2'));
   observer.observe(document.querySelector('#p3'));
   observer.observe(document.querySelector('#about'));
+
+
+  const mobileMenu=document.querySelector('.mobile-menu')
+  const iconH =document.querySelector('#nav-icon3')
+
+
+
+
+  iconH.addEventListener('click',()=>{
+   iconH.classList.toggle('open');
+   mobileMenu.classList.toggle('active-nav');
+  }
+  )
   
