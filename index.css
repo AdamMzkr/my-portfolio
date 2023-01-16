@@ -31,6 +31,9 @@ body {
 .nav-dot:hover span {
   opacity: 1;
 }
+section{
+  @apply pt-6 md:pt-12;
+}
 
 .secondary-title {
   @apply text-4xl font-bold my-5;
@@ -77,7 +80,8 @@ body {
   @apply bg-accent;
 }
 .hero-img {
-  max-height: 32rem;
+  padding-top: 2rem;
+  max-height: 30rem;
 }
 .button{
  @apply px-4 py-2 my-2 border border-accent flex items-center font-bold text-accent hover:bg-secondary-10  text-lg;
@@ -90,7 +94,7 @@ body {
   @apply h-full -mb-5 ml-4 md:ml-0  mt-5 md:mt-20 w-full md:w-2/3 p-3  bg-dark z-10;
 }
 .form-container{
-  @apply h-full  ml-4 md:ml-0  mt-5 w-full bg-transparent z-10;
+  @apply h-full    mt-5 w-full bg-transparent z-10;
 }
 
 .about-text{
@@ -165,10 +169,10 @@ body {
   @apply relative border border-accent focus-within:border-accent my-5;
 }
 .input-box .box{
- @apply block p-4 w-full text-lg appearance-none focus:outline-none bg-transparent;
+ @apply block p-2 md:p-4 w-full text-lg appearance-none focus:outline-none bg-transparent;
 }
 .input-box .label{
-  @apply absolute bg-body top-0 text-lg border-accent  p-4 -z-1 duration-300 origin-0; 
+  @apply absolute bg-body top-0 text-lg border-accent p-2 md:p-4 -z-1 duration-300 origin-0; 
 }
 .input-box .box:focus-within ~ label,
 .input-box .box:not(:placeholder-shown) ~ label {
@@ -181,17 +185,97 @@ body {
 .active{
   display: block;
 }    
-.mobile-menu-container{
+.mobile-menu{
   @apply bg-secondary-75;
-  z-index:100;
-  right:0;
+  z-index: 20;
+  right:-20rem;
   top:0;
   position:fixed;
   width:70%;
   height: 100%;
   margin:0;
-
+  transition:0.5s;
+}
+.active-nav{
+  right:0;
 }
 
+.face{
+  max-width:20rem;
+  max-height:20rem;
+}
+
+
+/* hamburger navi icon */
+
+#nav-icon3 {
+  width: 20px;
+  height: 18px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+ #nav-icon3 span{
+  @apply bg-accent;
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  border-radius: 1px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+#nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
+  top: 8px;
+}
+
+#nav-icon3 span:nth-child(4) {
+  top: 16px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+  top: 8px;
+  width: 0%;
+  left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+  top: 10px;
+  width: 0%;
+  left: 50%;
+}
 
 
