@@ -1,4 +1,6 @@
-const observer = new IntersectionObserver(entries => {
+// works side menubar(dot menu)
+
+  const observer = new IntersectionObserver(entries => {
     // Loop over the entries
     entries.forEach(entry => {
       // If the element is visible
@@ -31,15 +33,29 @@ const observer = new IntersectionObserver(entries => {
   observer.observe(document.querySelector('#about'));
 
 
+ 
+
+
+  // show adn hidden menu
   const mobileMenu=document.querySelector('.mobile-menu')
   const iconH =document.querySelector('#nav-icon3')
-
-
-
 
   iconH.addEventListener('click',()=>{
    iconH.classList.toggle('open');
    mobileMenu.classList.toggle('active-nav');
   }
   )
+  // colored active links
+  const links = document.querySelectorAll(".link");
+
+  for (let i = 0; i < links.length; i++) {
+    
+    links[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active-item");
+      current[0].className = current[0].className.replace(" active-item", "");
+      this.className += " active-item";
+      })
+    }
+
+  
   
