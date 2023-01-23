@@ -81,29 +81,5 @@ const sendMail = (mail) => {
 };
 
 
- 
-
-
-  // show adn hidden menu
-  const mobileMenu=document.querySelector('.mobile-menu')
-  const iconH =document.querySelector('#nav-icon3')
-
-  iconH.addEventListener('click',()=>{
-   iconH.classList.toggle('open');
-   mobileMenu.classList.toggle('active-nav');
-  }
-  )
-  // colored active links
-  const links = document.querySelectorAll(".link");
-
-  for (let i = 0; i < links.length; i++) {
-    
-    links[i].addEventListener("click", function() {
-      var current = document.getElementsByClassName("active-item");
-      current[0].className = current[0].className.replace(" active-item", "");
-      this.className += " active-item";
-      })
-    }
-
   
   
