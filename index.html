@@ -272,22 +272,21 @@
           <div  class="container my-5  flex flex-col md:flex-row w-full ">
 
             <div class="form-container flex justify-center items-center w-full">
-              <form action="" class="w-full md:w-3/4">
+              <form id="contact-form" method="post" action="send" enctype = "multipart/form-data" class="w-full md:w-3/4">
                 <div class="input-box">
-                  <input type="text" name="name" placeholder=" " class="box" />
+                  <input type="text" name="name" placeholder=" " class="box" required />
                   <label for="name"  class="label">Your name</label>
                 </div>
                 <div class="input-box">
-                  <input type="email" name="email" placeholder=" " class="box" />
+                  <input type="email" name="email" placeholder=" " class="box" required/>
                   <label for="email"  class="label">Email address</label>
                 </div>
                 <div class="input-box">
                   <textarea name="message" class="box"  
-                  rows="4" placeholder=""></textarea>
+                  rows="4" placeholder="" required></textarea>
                   <label for="message"  class="label">Write your message here</label>
                 </div>
-                <button
-                class="button">
+                <button type="submit" value="submit" class="button">
                 <i class='bx bx-send bx-sm icon'></i>Send a message
               </button>
               </form>
